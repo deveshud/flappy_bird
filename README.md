@@ -100,6 +100,15 @@ npm run preview
 
 The detailed architecture diagram lives in [docs/architecture.md](docs/architecture.md).
 
+## Documentation
+
+- [docs/README.md](docs/README.md)
+- [docs/architecture.md](docs/architecture.md)
+- [docs/development.md](docs/development.md)
+- [docs/gameplay-systems.md](docs/gameplay-systems.md)
+- [docs/module-reference.md](docs/module-reference.md)
+- [docs/troubleshooting.md](docs/troubleshooting.md)
+
 ## Scene Flow
 
 1. `BootScene` creates procedural textures and advances to the menu.
