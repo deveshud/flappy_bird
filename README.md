@@ -106,6 +106,7 @@ The detailed architecture diagram lives in [docs/architecture.md](docs/architect
 - [docs/architecture.md](docs/architecture.md)
 - [docs/development.md](docs/development.md)
 - [docs/gameplay-systems.md](docs/gameplay-systems.md)
+- [docs/milestones.md](docs/milestones.md)
 - [docs/module-reference.md](docs/module-reference.md)
 - [docs/troubleshooting.md](docs/troubleshooting.md)
 
