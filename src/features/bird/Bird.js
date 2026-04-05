@@ -3,9 +3,9 @@ import {
   BIRD_BODY_OFFSET_X,
   BIRD_BODY_OFFSET_Y,
   BIRD_BODY_RADIUS,
+  BIRD_TOP_PIPE_CONTACT_PADDING,
   BIRD_START_X,
   BIRD_START_Y,
-  CEILING_HIT_Y,
   FLAP_VELOCITY,
   GRAVITY_Y,
   MAX_FALL_SPEED,
@@ -44,10 +44,22 @@ export class Bird {
   }
 
   hasHitCeiling() {
-    return this.sprite.getTopCenter().y <= CEILING_HIT_Y;
+    return this.sprite.body.top <= 0;
   }
 
   hasHitGround(groundY) {
     return this.sprite.getBottomCenter().y >= groundY;
+  }
+
+  getTopPipeContactBounds() {
+    const { body } = this.sprite;
+    const padding = BIRD_TOP_PIPE_CONTACT_PADDING;
+
+    return new Phaser.Geom.Rectangle(
+      body.left - padding,
+      body.top - padding,
+      body.width + padding * 2,
+      body.height + padding * 2,
+    );
   }
 }
